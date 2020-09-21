@@ -1,0 +1,21 @@
+import javax.swing.event.*; 
+import java.io.*;
+import java.util.*;
+import java.awt.font.*;
+
+
+
+
+pad = ta.getText();
+        JOptionPane.showMessageDialog(null, "Do Not Enter");
+
+
+JFileChooser fc = new JFileChooser();
+    	fc.setCurrentDirectory(new java.io.File("C:/Users/Asm Shadow/Desktop"));
+    	fc.setDialogTitle("Hello World");
+    	fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    	Component open = null;
+		if(fc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION){
+    		
+    	}
+    	System.out.println(fc.getSelectedFile().getAbsolutePath());
